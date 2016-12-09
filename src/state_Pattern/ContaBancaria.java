@@ -4,21 +4,21 @@ import static javax.swing.JOptionPane.showMessageDialog;
 
 public class ContaBancaria {
 	public int numero;
-	public double saldo;
-	public double limite;
+	public int saldo;
+	public int limite;
 	public ContaState estado;
 	
 	public ContaBancaria()
 	{
 		this.numero = 123456;
-		this.limite = 245.00;
+		this.limite = 245;
 		this.saldo = 0;
 		this.estado = new SaldoPositivo(this);
 		
 	}
 	
 	
-	public ContaBancaria(int numero, double limite, double valor)
+	public ContaBancaria(int numero, int limite, int valor)
 	{
 		this.numero = numero;
 		this.limite = limite;

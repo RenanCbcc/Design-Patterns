@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class StatePatternDemo {
 	 static JFrame frame = new JFrame();
 	 static String str;
-	 static double valor;
+	 static int valor;
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
@@ -23,12 +23,12 @@ public class StatePatternDemo {
         	{
             	case "Saque":
             		str = JOptionPane.showInputDialog(null, "Digite uma valor");
-            		 valor =  Double.parseDouble( str.trim()  );
+            		 valor =  Integer.parseInt( str.trim()  );
             		bradesco.Saque(valor);;
             		break;
             	case "Deposito":
             		String str = JOptionPane.showInputDialog(null, "Digite uma valor");
-            		valor = Double.parseDouble( str.trim()  );
+            		valor = Integer.parseInt( str.trim()  );
             		bradesco.Deposito(valor);;
             		break;
             	
