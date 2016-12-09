@@ -11,7 +11,7 @@ package state_Pattern;
  		
  	}
  	
- 	public void Deposito( double valor)
+ 	public void Deposito( int valor)
  	{
  		this.conta.saldo+=valor;
 		showMessageDialog(null,"Foi depositado R$ "+ valor);
@@ -30,11 +30,9 @@ package state_Pattern;
  		
  	}
  	
- 	public void Saque(double valor)
+ 	public void Saque(int valor)
  	{
- 		this.conta.saldo+=valor;
  		showMessageDialog(null,"Conta bloqueada, saque cancelado, saldo atual R$ "+this.conta.saldo);
- 	
  	}
  	
  	public void Status(){

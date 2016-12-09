@@ -11,7 +11,7 @@ private ContaBancaria conta;
 		
 	}
 	
-	public void Deposito( double valor)
+	public void Deposito( int valor)
 	{
 		this.conta.saldo+=valor;
 		showMessageDialog(null,"Foi depositado R$ "+ valor);
@@ -29,7 +29,7 @@ private ContaBancaria conta;
 	
 	}
 	
-	public void Saque(double valor)
+	public void Saque(int valor)
 	{
 		this.conta.saldo -= valor;
 		showMessageDialog(null,"Foi sacado R$ "+ valor);

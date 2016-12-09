@@ -25,13 +25,13 @@ public class ContaBancaria {
 		this.estado = new SaldoPositivo(this);
 	}
 	
-	public void Saque(double valor)
+	public void Saque(int valor)
 	{
 		this.estado.Saque(valor);
 		this.estado.Status();
 	}
 	
-	public void Deposito(double valor)
+	public void Deposito(int valor)
 	{
 		this.estado.Deposito(valor);
 		this.estado.Status();
