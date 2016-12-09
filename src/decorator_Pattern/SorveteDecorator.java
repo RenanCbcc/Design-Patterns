@@ -1,7 +1,8 @@
 package decorator_Pattern;
 
 public abstract class SorveteDecorator implements Sorvete {
-	 protected Sorvete sorvete;
+	 
+	protected Sorvete sorvete;
 	 
 	 public SorveteDecorator(Sorvete sorvete)
 	 {
