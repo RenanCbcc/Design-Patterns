@@ -17,13 +17,13 @@ public class SaldoPositivo implements ContaState {
 		showMessageDialog(null,"Foi depositado R$ "+ valor);
 		if ( this.conta.saldo <0 )
 		{
-			if ( this.conta.saldo < -this.conta.saldo)
+			if ( this.conta.saldo < -1.0*this.conta.limite)
 			{
-				this.conta.estado = new ContaFechada(this.conta);
+				this.conta.estado = new  ContaBloqueada(this.conta);
 			}
 			else
 			{
-				this.conta.estado = new SaldoNegativo(this.conta);
+				this.conta.estado = new SaldoPositivo(this.conta);
 			}
 		}
 	}
@@ -34,9 +34,9 @@ public class SaldoPositivo implements ContaState {
 		showMessageDialog(null,"Foi sacado R$ "+ valor);
 		if (this.conta.saldo < 0)
 		{
-			if (this.conta.saldo < -this.conta.saldo)
+			if (this.conta.saldo < -1.0*this.conta.limite)
 			{
-				this.conta.estado = new ContaFechada(this.conta);
+				this.conta.estado = new  ContaBloqueada (this.conta);
 		         
 			}
 			else
@@ -47,8 +47,8 @@ public class SaldoPositivo implements ContaState {
 		
 	}
 	
-	public String toString(){
-    	return "Conta Positiva";
+	public void Status(){
+		showMessageDialog(null,"Conta Positiva");
     	}
 	
 	

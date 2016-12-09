@@ -1,5 +1,7 @@
 package state_Pattern;
 
+import static javax.swing.JOptionPane.showMessageDialog;
+
 public class ContaBancaria {
 	public int numero;
 	public double saldo;
@@ -11,7 +13,8 @@ public class ContaBancaria {
 		this.numero = 123456;
 		this.limite = 245.00;
 		this.saldo = 0;
-		this.estado = null;
+		this.estado = new SaldoPositivo(this);
+		
 	}
 	
 	
@@ -22,9 +25,24 @@ public class ContaBancaria {
 		this.estado = new SaldoPositivo(this);
 	}
 	
-	@Override
-	public String toString() {
-		return "ContaBancaria [numero=" + numero + ", saldo=" + saldo + ", limite=" + limite + "]";
+	public void Saque(double valor)
+	{
+		this.estado.Saque(valor);
+		this.estado.Status();
 	}
-
+	
+	public void Deposito(double valor)
+	{
+		this.estado.Deposito(valor);
+		this.estado.Status();
+	}
+	public void Status(){
+		String str = 
+				"Numero: " + this.numero +
+				"\nSaldo: " + this.saldo+
+				"\nLimite: "+ this.limite;
+					
+		showMessageDialog(null,str,"Dados da conta",1);
+    	}
+	
 }
