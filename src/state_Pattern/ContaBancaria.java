@@ -1,5 +1,4 @@
 package state_Pattern;
-
 import static javax.swing.JOptionPane.showMessageDialog;
 
 public class ContaBancaria {
@@ -7,6 +6,7 @@ public class ContaBancaria {
 	public int saldo;
 	public int limite;
 	public ContaState estado;
+	public String user;
 	
 	public ContaBancaria()
 	{
@@ -14,15 +14,17 @@ public class ContaBancaria {
 		this.limite = 245;
 		this.saldo = 0;
 		this.estado = new SaldoPositivo(this);
-		
+		this.user = "Tio Patinhas";
+	
 	}
 	
 	
-	public ContaBancaria(int numero, int limite, int valor)
+	public ContaBancaria(String name,int numero, int limite, int valor)
 	{
 		this.numero = numero;
 		this.limite = limite;
 		this.estado = new SaldoPositivo(this);
+		this.user = name;
 	}
 	
 	public void Saque(int valor)
@@ -37,8 +39,8 @@ public class ContaBancaria {
 		this.estado.Status();
 	}
 	public void Status(){
-		String str = 
-				"Numero: " + this.numero +
+		String str ="Cliente " + this.user+ 
+				"\nNumero: " + this.numero +
 				"\nSaldo: " + this.saldo+
 				"\nLimite: "+ this.limite;
 					

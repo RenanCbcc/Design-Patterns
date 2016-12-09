@@ -10,7 +10,8 @@ public class StatePatternDemo {
 	{
 		// TODO Auto-generated method stub
         String[] opções = {"Saque", "Deposito", "Status", "Sair"};
-        ContaBancaria bradesco = new ContaBancaria(); 
+        String user = JOptionPane.showInputDialog(null, "Digite seu nome ");
+        ContaBancaria bradesco = new ContaBancaria(user,7592,1000,0); 
         
         while(true)
         {
