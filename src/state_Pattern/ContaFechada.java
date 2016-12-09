@@ -2,10 +2,10 @@ package state_Pattern;
 
 import static javax.swing.JOptionPane.showMessageDialog;
 
-public class SaldoNegativo implements ContaState {
+public class ContaFechada implements ContaState  {
 private ContaBancaria conta;
 	
-	public SaldoNegativo(ContaBancaria conta)
+	public ContaFechada(ContaBancaria conta)
 	{
 		this.conta = conta;
 		
@@ -25,5 +25,8 @@ private ContaBancaria conta;
 	
 	}
 	
+	public String toString(){
+    	return "Conta Fechada";
+    	}
 	
 }
