@@ -3,7 +3,7 @@ package decorator_Pattern;
 public class Sorvete_Chocolate_Diet implements Sorvete {
 	public String fazer_Sorvete()
 	{
-		return "Sorvete de Chocolate Diet com";
+		return "Sorvete de Chocolate Diet ";
 	}
 
 	public double preço_Sorvete()

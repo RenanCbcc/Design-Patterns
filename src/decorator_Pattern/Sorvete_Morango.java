@@ -4,7 +4,7 @@ public class Sorvete_Morango implements Sorvete {
 
 	public String fazer_Sorvete()
 	{
-		return "Sorvete de Morango com";
+		return "Sorvete de Morango ";
 	}
 	
 	public double preço_Sorvete()

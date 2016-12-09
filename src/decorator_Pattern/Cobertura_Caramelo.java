@@ -12,7 +12,7 @@ public class Cobertura_Caramelo extends SorveteDecorator {
 	}
 	
 	private String add_Caramelo(){
-		return "Com cobertura de Caramelo";
+		return "com cobertura de Caramelo";
 	}
 	
 	public double preço_Sorvete()

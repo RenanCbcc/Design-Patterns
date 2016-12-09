@@ -14,7 +14,7 @@ public class Cobertura_Chocolate extends SorveteDecorator {
 	
 	
 	private String add_Chocolate(){
-		return "Com cobertura de Chocolate";
+		return "com cobertura de Chocolate";
 	}
 	
 	public double preço_Sorvete(){
