@@ -1,7 +1,6 @@
 package strategy_Pattern;
 import javax.swing.JOptionPane;
 
-
 public class StrategyPatternDemo 
 {
 
@@ -14,7 +13,7 @@ public class StrategyPatternDemo
 		Texto texto = new Texto(new Normal());
 		String palavra = "Use00";
 		
-		
+		//AINDA ESTÁ ERRADO!!!
 		JOptionPane.showMessageDialog(null,"palavra: " + texto.leiaTexto(palavra));
 		
 		
