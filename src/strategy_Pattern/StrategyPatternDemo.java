@@ -12,11 +12,10 @@ public class StrategyPatternDemo
 	
 		
 		Texto texto = new Texto(new Normal());
-		String palavra = "Programação00";
+		String palavra = "Use00";
+		
+		
 		JOptionPane.showMessageDialog(null,"palavra: " + texto.leiaTexto(palavra));
-		
-
-		
 		
 		
 				
