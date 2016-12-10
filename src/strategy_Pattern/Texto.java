@@ -1,0 +1,17 @@
+package strategy_Pattern;
+
+public class Texto {
+	private Palavra palavra;
+	
+	public Texto(Palavra palavra)
+	{
+		this.palavra = palavra;
+	}
+	
+	public String leiaTexto(String palavra)
+	{
+		return this.palavra.leia(palavra);
+	}
+	
+	
+}
