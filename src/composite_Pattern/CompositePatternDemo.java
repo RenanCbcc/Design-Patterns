@@ -1,5 +1,7 @@
 package composite_Pattern;
 
+import javax.swing.JOptionPane;
+
 public class CompositePatternDemo {
 
 	public static void main(String[] args) {
@@ -23,14 +25,8 @@ public class CompositePatternDemo {
 		gCard.setSubordinateList(gpu);
 		gCard.setSubordinateList(gmemory);
 		
-		 for (Peça pc : computer.getSubordinateList()) {
-	         System.out.println(pc);
-	         
-	         for (Peça pç : pc.getSubordinateList()) {
-	            System.out.println(pç);
-	         }
-	      }	
-		
+		JOptionPane.showMessageDialog(null,computer.toString());
+		 
 		
 	}
 

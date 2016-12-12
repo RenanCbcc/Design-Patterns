@@ -54,8 +54,8 @@ public class Peça implements Componente {
 
 	@Override
 	public String toString() {
-		return "Peça [Fabricante:" + getFabricante() + ",Detalhes: " + getDetalhes() + ",Preço:"
-				+ getPreço() + ",Subordinate:" + getSubordinateList() + "]";
+		return "\nDetalhes: " + getDetalhes() + "\nFabricante:" + getFabricante() + ",\nPreço:"
+				+ getPreço() + ",\nSubordinate:" + getSubordinateList();
 	}
 	
 	
