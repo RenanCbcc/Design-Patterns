@@ -7,8 +7,8 @@ public class Gpu extends Gcard {
 		return valor;
 	}
 
-	public Gpu(String peça, String detalhe, int valor) {
-		super(peça, detalhe);
+	public Gpu(int valor,String peÃ§a, String detalhe) {
+		super(peÃ§a, detalhe);
 		this.valor = valor;
 	}
 	
