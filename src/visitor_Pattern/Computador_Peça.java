@@ -1,6 +1,7 @@
 package visitor_Pattern;
 
-public interface Computador_Peça {
+public interface Computador_PeÃ§a {
 	
 	public void accept(ComputerPartVisitor computerPartVisitor);
+	public int getValor();
 }
