@@ -4,26 +4,26 @@ public class Componente_Valor implements ComputerPartVisitor{
 	
 		   @Override
 		   public void visit(Computador computer) {
-		      System.out.println("Preço do computador.");
-		      computer.getValor();
+		      System.out.println("Preço do computador: "+computer.getValor());
+		     
 		   }
 
 		   @Override
 		   public void visit(Memoria memoria) {
-		      System.out.println("Preço da memória ram.");
-		      memoria.getValor();
+		      System.out.println("Preço da memória ram: "+memoria.getValor());
+		      
 		   }
 
 		   @Override
 		   public void visit(Gmemoria gram) {
-		      System.out.println("Displaying Gram.");
-		      gram.getValor();
+		      System.out.println("Displaying Gram: "+gram.getValor());
+		      
 		   }
 
 		   @Override
 		   public void visit(Gpu gpu) {
 		      System.out.println("Displaying Gcard.");
-		      gpu.getValor();
+		      
 		 
 		   }
 

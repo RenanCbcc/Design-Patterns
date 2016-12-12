@@ -6,9 +6,9 @@ public class Computador implements Computador_Componente {
 	private String componente;
 	private String detalhe;
 	
-	public Computador(int valor,String componente,String detalhe)
+	public Computador(String componente,String detalhe)
 	{
-		this.valor = valor;
+	
 		this.detalhe = detalhe;
 		this.componente = componente;
 		parts = new Computador_Componente[] {
