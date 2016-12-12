@@ -1,6 +1,6 @@
 package visitor_Pattern;
 
-public class Memoria implements Computador_Peça {
+public class Memoria implements Computador_Componente {
 	private int valor = 0;
 	private String peça;
 	private String detalhe;

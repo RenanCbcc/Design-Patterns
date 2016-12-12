@@ -1,6 +1,6 @@
 package visitor_Pattern;
 
-public abstract class Gcard implements Computador_Peça {
+public abstract class Gcard implements Computador_Componente {
 	protected String peça;
 	protected String detalhe;
 	

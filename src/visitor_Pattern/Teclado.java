@@ -1,16 +1,16 @@
 package visitor_Pattern;
 
-public class Teclado implements Computador_Peça {
+public class Teclado implements Computador_Componente {
 	
 	private int valor = 0;
-	private String peça;
+	private String componente;
 	private String detalhe;
 	
-	public Teclado(int valor,String peça,String detalhe)
+	public Teclado(int valor,String componete,String detalhe)
 	{
 		this.valor = valor;
 		this.detalhe = detalhe;
-		this.peça = peça;
+		this.componente = componete;
 	}
 	
 	
@@ -19,8 +19,9 @@ public class Teclado implements Computador_Peça {
 	}
 
 
-	public String getPeça() {
-		return peça;
+
+	public String getComponente() {
+		return componente;
 	}
 
 

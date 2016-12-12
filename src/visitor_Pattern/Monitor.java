@@ -1,15 +1,15 @@
 package visitor_Pattern;
 
-public class Monitor implements Computador_Peça {
+public class Monitor implements Computador_Componente {
 	private int valor = 0;
-	private String peça;
+	private String componente;
 	private String detalhe;
 	
 	
-	public Monitor(int valor, String peça, String detalhe) {
+	public Monitor(int valor, String componente, String detalhe) {
 		super();
 		this.valor = valor;
-		this.peça = peça;
+		this.componente = componente;
 		this.detalhe = detalhe;
 	}
 
@@ -19,8 +19,8 @@ public class Monitor implements Computador_Peça {
 	}
 
 
-	public String getPeça() {
-		return peça;
+	public String getcomponente() {
+		return componente;
 	}
 
 

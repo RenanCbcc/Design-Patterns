@@ -3,8 +3,8 @@ package visitor_Pattern;
 public class Gmemoria extends Gcard{
 	private int valor;
 	
-	public Gmemoria(int valor,String peça, String detalhe) {
-		super(peça, detalhe);
+	public Gmemoria(int valor,String componente, String detalhe) {
+		super(componente, detalhe);
 		this.valor = valor;
 	}
 	
