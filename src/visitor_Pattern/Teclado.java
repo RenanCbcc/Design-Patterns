@@ -1,19 +1,34 @@
 package visitor_Pattern;
 
-public class Teclado implements Computador_PeÁa {
+public class Teclado implements Computador_Pe√ßa {
 	
 	private int valor = 0;
-	private String peÁa;
+	private String pe√ßa;
 	private String detalhe;
 	
-	public Teclado(int valor,String peÁa,String detalhe)
+	public Teclado(int valor,String pe√ßa,String detalhe)
 	{
 		this.valor = valor;
 		this.detalhe = detalhe;
-		this.peÁa = peÁa;
+		this.pe√ßa = pe√ßa;
 	}
 	
 	
+	public int getValor() {
+		return valor;
+	}
+
+
+	public String getPe√ßa() {
+		return pe√ßa;
+	}
+
+
+	public String getDetalhe() {
+		return detalhe;
+	}
+
+
 	@Override
 	   public void accept(ComputerPartVisitor computerPartVisitor) 
 	{
