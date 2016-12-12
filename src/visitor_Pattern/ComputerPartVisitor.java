@@ -6,4 +6,5 @@ public interface ComputerPartVisitor {
 	public void visit(Monitor monitor);
 	public void visit(Computador computador);
 	public void visit(Cpu amd);
+	public void visit(Gcard nVidea);
 }
