@@ -1,31 +1,37 @@
 package visitor_Pattern;
 
-public class Computador implements Computador_PeÁa {
-	Computador_PeÁa[] parts;
+public class Computador implements Computador_Pe√ßa {
+	Computador_Pe√ßa[] parts;
 	private int valor = 0;
-	private String peÁa;
+	private String pe√ßa;
 	private String detalhe;
 	
-	public Computador(int valor,String peÁa,String detalhe)
+	public Computador(int valor,String pe√ßa,String detalhe)
 	{
 		this.valor = valor;
 		this.detalhe = detalhe;
-		this.peÁa = peÁa;
-		parts = new Computador_PeÁa[] {
-				new Monitor(),
+		this.pe√ßa = pe√ßa;
+		parts = new Computador_Pe√ßa[] {
+				new Monitor(300,"Monitor","Samsung"),
 				new Memoria(100,"Memoria","Kingston"),
 				new Cpu(200,"Processador","Amd"),
+				new Gpu(100,"Gpu","Amd"),
+				new Gmemoria(100,"Gmemoria","Amd"),
 				new Teclado(20,"Teclado","Maxprint")};
 	}
 	
 
 	   public int getValor() {
-		return valor;
+		for (Computador_Pe√ßa pc : parts)
+		{
+			this.valor+= pc.getValor();
+		}
+		return this.valor;
 	}
 
 
-	public String getPeÁa() {
-		return peÁa;
+	public String getPe√ßa() {
+		return pe√ßa;
 	}
 
 
