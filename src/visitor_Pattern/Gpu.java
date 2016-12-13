@@ -16,6 +16,11 @@ public class Gpu extends Gcard {
 	{
 	      computerPartVisitor.visit(this);
 	}
+	
+	public String getComponente() {
+		return this.componente;
+	}
+
 
 	
 	

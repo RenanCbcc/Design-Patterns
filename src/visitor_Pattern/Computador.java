@@ -1,6 +1,7 @@
 package visitor_Pattern;
 
 public class Computador implements Computador_Componente {
+	
 	Computador_Componente[] parts;
 	private int valor = 0;
 	private String componente;
@@ -13,10 +14,10 @@ public class Computador implements Computador_Componente {
 		this.componente = componente;
 		parts = new Computador_Componente[] {
 				new Monitor(300,"Monitor","Samsung"),
-				new Memoria(100,"Memoria","Kingston"),
+				new Memoria(100,"Memoria RAM","Kingston"),
 				new Cpu(200,"Processador","Amd"),
 				new Gpu(100,"Gpu","Amd"),
-				new Gmemoria(100,"Gmemoria","Amd"),
+				new Gmemoria(200,"Memoria Gráfica","Amd"),
 				new Teclado(20,"Teclado","Maxprint")};
 	}
 	
@@ -43,9 +44,18 @@ public class Computador implements Computador_Componente {
 
 	   @Override
 	   public void accept(ComputerPartVisitor computerPartVisitor) {
-	      for (int i = 0; i < parts.length; i++) {
+		   computerPartVisitor.visit(this);
+		   for (int i = 0; i < parts.length; i++) {
 	         parts[i].accept(computerPartVisitor);
 	      }
-	      computerPartVisitor.visit(this);
+	      
 	   }
+	   
+	   
+	   @Override
+		public String toString() {
+			return "Computador " + getComponente() + "\nFabricante: "
+					+ getDetalhe() + "\nValor: "+getValor();
+		}
+
 }

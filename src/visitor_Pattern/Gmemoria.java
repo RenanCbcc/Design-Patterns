@@ -19,6 +19,9 @@ public class Gmemoria extends Gcard{
 	}
 
 
+	public String getComponente() {
+		return this.componente;
+	}
 
 
 		

@@ -2,18 +2,18 @@ package visitor_Pattern;
 
 public class Memoria implements Computador_Componente {
 	private int valor = 0;
-	private String peça;
+	private String componente;
 	private String detalhe;
 	
-	public Memoria(int valor,String peça,String detalhe)
+	public Memoria(int valor,String componente,String detalhe)
 	{
 		this.valor = valor;
 		this.detalhe = detalhe;
-		this.peça = peça;
+		this.componente = componente;
 	}
 	
-	public String getPeça() {
-		return peça;
+	public String getComponente() {
+		return componente;
 	}
 
 	public String getDetalhe() {

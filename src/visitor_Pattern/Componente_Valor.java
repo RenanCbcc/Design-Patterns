@@ -1,45 +1,26 @@
 package visitor_Pattern;
 
+import javax.swing.JOptionPane;
+
 public class Componente_Valor implements ComputerPartVisitor{
 	
-		   @Override
-		   public void visit(Computador computer) {
-		      System.out.println("Preço do computador: "+computer.getValor());
-		     
+		 		   
+		   public void visit(Computador_Componente componente)
+		   {
+			   if ( componente instanceof Memoria || componente instanceof Gmemoria )
+				   JOptionPane.showMessageDialog(null,"Memoria: "+componente.getDetalhe()+
+						   							  "\nTipo: "+componente.getComponente()+
+						   								"\ncusta: "+componente.getValor());
 		   }
-
-		   @Override
-		   public void visit(Memoria memoria) {
-		      System.out.println("Preço da memória ram: "+memoria.getValor());
-		      
-		   }
-
-		   @Override
-		   public void visit(Gmemoria gram) {
-		      System.out.println("Displaying Gram: "+gram.getValor());
-		      
-		   }
-
-		   @Override
-		   public void visit(Gpu gpu) {
-		      System.out.println("Displaying Gcard.");
-		      
-		 
-		   }
-
-		   @Override
-		   public void visit(Monitor monitor) {
-		      System.out.println("Displaying Monitor.");
-		   } 
 		   
 		   
-		   public void visit(Cpu amd) {
-			      System.out.println("Displaying Cpu.");
-			   } 
 		   
-		   public void visit(Teclado teclado) {
-			      System.out.println("Displaying Teclado.");
-			   } 
+		   public void visit(Computador componente)
+		   {
+			   String str = componente.toString();
+			   JOptionPane.showMessageDialog(null,str);
+		   }
+		   
 		   
 	}
 

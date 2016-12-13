@@ -1,18 +1,18 @@
 package visitor_Pattern;
 
 public abstract class Gcard implements Computador_Componente {
-	protected String peça;
+	protected String componente;
 	protected String detalhe;
 	
-	public String getPeça() {
-		return peça;
+	public String getComponente() {
+		return componente;
 	}
 	public String getDetalhe() {
 		return detalhe;
 	}
 	public Gcard(String peça, String detalhe) {
 		super();
-		this.peça = peça;
+		this.componente = peça;
 		this.detalhe = detalhe;
 	}
 	

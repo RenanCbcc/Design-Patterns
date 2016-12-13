@@ -19,7 +19,7 @@ public class Monitor implements Computador_Componente {
 	}
 
 
-	public String getcomponente() {
+	public String getComponente() {
 		return componente;
 	}
 
