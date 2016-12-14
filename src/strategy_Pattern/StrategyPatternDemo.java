@@ -12,16 +12,16 @@ public class StrategyPatternDemo
 		String[] palavras = {"norma","italico","negrito","Sublinhado"};
 		
 		texto = new Texto(new Normal());
-		JOptionPane.showMessageDialog(null,"palavra: " + texto.leiaTexto(palavras[0]));
+		JOptionPane.showMessageDialog(null,"palavra: " + texto.excuteRender(palavras[0]));
 		
 		texto = new Texto(new Italico());
-		JOptionPane.showMessageDialog(null,"palavra: " + texto.leiaTexto(palavras[1]));
+		JOptionPane.showMessageDialog(null,"palavra: " + texto.excuteRender(palavras[1]));
 		
 		texto = new Texto(new Negrito());
-		JOptionPane.showMessageDialog(null,"palavra: " + texto.leiaTexto(palavras[2]));
+		JOptionPane.showMessageDialog(null,"palavra: " + texto.excuteRender(palavras[2]));
 		
 		texto = new Texto(new Sublinhado());
-		JOptionPane.showMessageDialog(null,"palavra: " + texto.leiaTexto(palavras[3]));
+		JOptionPane.showMessageDialog(null,"palavra: " + texto.excuteRender(palavras[3]));
 		
 				
 	

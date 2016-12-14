@@ -26,6 +26,7 @@ public class CompositePatternDemo {
 		gCard.setSubordinateList(gmemory);
 		
 		JOptionPane.showMessageDialog(null,computer.toString());
+		JOptionPane.showMessageDialog(null,gCard.toString());
 		 
 		
 	}

@@ -4,3 +4,4 @@ public interface Palavra {
 	
 	public String render(String palavra);
 }
+

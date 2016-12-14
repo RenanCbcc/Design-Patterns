@@ -8,7 +8,7 @@ public class Texto {
 		this.palavra = palavra;
 	}
 	
-	public String leiaTexto(String palavra)
+	public String excuteRender(String palavra)
 	{
 		return this.palavra.render(palavra);
 	}
