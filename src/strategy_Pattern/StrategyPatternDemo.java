@@ -8,14 +8,20 @@ public class StrategyPatternDemo
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
-	
+		Texto texto;
+		String[] palavras = {"norma","italico","negrito","Sublinhado"};
 		
-		Texto texto = new Texto(new Normal());
-		String palavra = "Use00";
+		texto = new Texto(new Normal());
+		JOptionPane.showMessageDialog(null,"palavra: " + texto.leiaTexto(palavras[0]));
 		
-		//AINDA ESTÁ ERRADO!!!
-		JOptionPane.showMessageDialog(null,"palavra: " + texto.leiaTexto(palavra));
+		texto = new Texto(new Italico());
+		JOptionPane.showMessageDialog(null,"palavra: " + texto.leiaTexto(palavras[1]));
 		
+		texto = new Texto(new Negrito());
+		JOptionPane.showMessageDialog(null,"palavra: " + texto.leiaTexto(palavras[2]));
+		
+		texto = new Texto(new Sublinhado());
+		JOptionPane.showMessageDialog(null,"palavra: " + texto.leiaTexto(palavras[3]));
 		
 				
 	

@@ -10,7 +10,7 @@ public class Texto {
 	
 	public String leiaTexto(String palavra)
 	{
-		return this.palavra.leia(palavra);
+		return this.palavra.render(palavra);
 	}
 	
 	
