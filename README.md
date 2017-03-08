@@ -1,6 +1,5 @@
- Design-Patterns  
-----------------
-# :coffee: Padrões de projeto implementados (às pressas) em Java para disciplina Análise e Projeto de Software, UFPA. 
+# Design-Patterns  
+## :coffee: Padrões de projeto implementados (às pressas) em Java para disciplina Análise e Projeto de Software, UFPA. 
 * Composite Pattern
 * Decorator Pattern
 * State Pattern
