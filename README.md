@@ -1,4 +1,4 @@
- Design-Patterns
+ Design-Patterns  :coffee:
 ----------------
 ### Padrões de projeto implementados (às pressas) em Java para disciplina Análise e Projeto de Software, UFPA. 
 * Composite Pattern
